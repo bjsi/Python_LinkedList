@@ -1,6 +1,8 @@
 import pytest
 from app.add_func import my_add
 
+# python -m pytest from root dir to run tests
+
 
 NUMBER_1 = 3.0
 NUMBER_2 = 2.0

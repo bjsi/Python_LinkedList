@@ -1,5 +1,5 @@
 import pytest
-from app.add_func import my_add
+from app.template import my_add
 
 # python -m pytest from root dir to run tests
 

@@ -1,4 +1,4 @@
-# template Data Structures and Algorithms project in python
+# linked_list Data Structures and Algorithms project in python
 
 ## Running this project
 

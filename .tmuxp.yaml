@@ -6,9 +6,12 @@ windows:
       layout: main-horizontal
       panes:
           - shell_command:
+              - source /env/bin/activate
               - nvim ./app
           - shell_command:
+              - source /env/bin/activate
               - nvim ./tests
           - shell_command:
+              - source /env/bin/activate
               - ipython
               - clear

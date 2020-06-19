@@ -1,5 +1,5 @@
 import pytest
-from lib import my_add
+from app.add_func import my_add
 
 
 NUMBER_1 = 3.0

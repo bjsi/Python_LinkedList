@@ -1,0 +1,14 @@
+session_name: ${PROJECT_NAME}
+start_directory: ./
+windows:
+    - window_name: dev
+      focus: True
+      layout: main-horizontal
+      panes:
+          - shell_command:
+              - nvim ./app
+          - shell_command:
+              - nvim ./tests
+          - shell_command:
+              - ipython
+              - clear

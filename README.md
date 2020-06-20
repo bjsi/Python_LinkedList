@@ -2,6 +2,8 @@
 
 ## Running this project
 
+![Python application](https://github.com/bjsi/Python_LinkedList/workflows/Python%20application/badge.svg?branch=master)
+
 Install the requirements:
 
 pip install -r requirements.txt

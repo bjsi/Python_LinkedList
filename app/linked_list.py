@@ -41,3 +41,29 @@ class List:
             count += 1
             cur = cur.next
         return count
+
+    def add(self, node: Node) -> None:
+        """
+        Add a node to the list.
+        :returns: None.
+        """
+
+        tail = self.get_tail()
+        if tail is None:
+            self.head = node
+            return
+        tail.next = node
+
+    def get_tail(self) -> Optional[Node]:
+        """
+        Get the last element in the list.
+        :returns: Node or None.
+        """
+
+        if self.head is None:
+            return None
+
+        cur = self.head
+        while cur.next is not None:
+            cur = cur.next
+        return cur

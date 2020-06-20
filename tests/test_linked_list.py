@@ -1,7 +1,31 @@
 import pytest
 from app.linked_list import List, Node
+import random
 
 # python -m pytest from root dir to run tests
+
+
+def test_get_tail_returns_tail():
+    lis = List()
+    node = Node(1)
+    lis.add(node)
+    assert lis.get_tail() == node
+
+
+def test_add_node_list_length_is_one():
+    lis = List()
+    node = Node(1)
+    lis.add(node)
+    assert lis.length() == 1
+
+
+def test_add_n_nodes_length_is_n():
+    lis = List()
+    expected = random.randint(0, 100)
+    for n in range(expected):
+        node = Node(n)
+        lis.add(node)
+    assert lis.length() == expected
 
 
 def test_create_list_list_is_empty():

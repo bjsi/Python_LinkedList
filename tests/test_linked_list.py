@@ -46,3 +46,22 @@ def test_create_node_node_not_None():
 def test_create_node_node_data_correct():
     node = Node(5)
     assert node.data == 5
+
+
+def test_iter_empty_list():
+    lis = List()
+    output = None
+    for x in lis:
+        output = x
+    assert output is None
+
+
+def test_iter_singleton_list():
+    lis = List()
+    node = Node(1)
+    lis.add(node)
+    for x in lis:
+        output = x
+    assert output is not None
+    assert output is node
+

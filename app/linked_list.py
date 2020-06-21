@@ -29,6 +29,13 @@ class List:
     def __init__(self):
         self.head = None
 
+    def __iter__(self):
+        cur = self.head
+        while cur:
+            yield cur
+            cur = cur.next
+        return
+
     def length(self) -> int:
         """
         Get the number of Nodes in the List.
